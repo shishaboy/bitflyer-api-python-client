@@ -8,7 +8,7 @@ import json
 class Client(object):
 
 	def __init__(self, **kwargs):
-		self.origin = kwargs.get('origin', 'https://api.bitflyer.jp')
+		self.origin = kwargs.get('origin', 'https://api.bitflyer.com')
 		public_key = kwargs.get('public_key', None)
 		if public_key is None:
 			raise Exception('public key is absent.')
